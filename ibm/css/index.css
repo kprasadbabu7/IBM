@@ -8,6 +8,7 @@
             font-family: Cabin-Regular,AdobeInvisFont,MyriadPro-Regular;
             font-size: 20px;
             margin-right: 5px;
+                color: #616973;
         }
 
         .carousel-caption {
@@ -41,20 +42,94 @@
 
         }
 
-        @media only screen and (max-width: 600px) {
+            /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+            .navbar-collapse {
+                z-index:9
+            }
+
+           @media(max-width:990px) {
+            .mobileMenu {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                transform: translate(-100%);
+                transition: all ease 0.25s;
+            }
+
+            .open {
+                transform: translate(0) !important;
+            }
+
+            .overlay {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background-color: #d0cccc;
+                opacity: 0.5;
+                display: none;
+            }
+
+            .overlay-open {
+                display: block;
+            }
+
+            .navbar-nav {
+                overflow-y: auto;
+            }
+
+            .onRight {
+                left: auto;
+                right: 0;
+                transform: translate(100%);
+            }
+            .navbar{
+                    position: fixed;
+    right: 0;
+    top:0;
+    left: 0;
+    z-index: 1030;
+            }
+            .slide{
+                margin-top:95px;
+            }
+
+
             .top-cards {
                 margin-top: 1em;
             }
 
             .carousel-caption h1 {
-                letter-spacing: 2px;
-                font-size: 1.3rem;
+                letter-spacing: 1px;
+                font-size: 16px;
                 font-weight: 600;
             }
 
             .carousel-caption p {
-                letter-spacing: 1px;
-                font-size: 16px;
+                letter-spacing: 0.5px;
+                font-size: 15px;
             }
             .partners div .card{
                     padding: 5px 53px;
@@ -65,25 +140,10 @@
         }
 
 
-        @media only screen and (min-width: 600px) {
-            .top-cards {
-                margin-top: 1em;
-            }
 
-            .carousel-caption h1 {
-                letter-spacing: 2px;
-                font-size: 1.3rem;
-                font-weight: 600;
-            }
+ 
 
-            .carousel-caption p {
-                letter-spacing: 1px;
-                font-size: 16px;
-            }
-            .partners div .card{
-                    padding: 5px 53px;
-            }
-        }
+  
          
         @media only screen and (min-width: 768px) {
             .top-cards {
@@ -104,6 +164,10 @@
                  .partners div .card img{
                     height:67px
             }
+                   .slide{
+                margin-top:0px;
+            }
+
         }
  
         @media only screen and (min-width: 992px) {
