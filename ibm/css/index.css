@@ -1,0 +1,114 @@
+ 
+
+        body {
+            font-family: Roboto-Regular,AdobeInvisFont,MyriadPro-Regular;
+        }
+
+        .navbar ul li a {
+            font-family: Cabin-Regular,AdobeInvisFont,MyriadPro-Regular;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .carousel-caption {
+            z-index: 10;
+            color: #fff;
+            text-align: center;
+            top: 50%;
+            bottom: auto;
+            -webkit-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+        }
+      
+        .btn-primary {
+            background: #7E6A9E;
+            border: 1px solid #7E6A9E;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 16px;
+        }
+
+        .bg-white {
+            background: #FFFFFF;
+        }
+        .contact-header span{
+            color:lightgray  ;
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            .top-cards {
+                margin-top: 1em;
+            }
+
+            .carousel-caption h1 {
+                letter-spacing: 2px;
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+
+            .carousel-caption p {
+                letter-spacing: 1px;
+                font-size: 16px;
+            }
+            .partners div .card{
+                    padding: 5px 53px;
+            }
+               .partners div .card img{
+                    height:67px
+            }
+        }
+
+
+        @media only screen and (min-width: 600px) {
+            .top-cards {
+                margin-top: 1em;
+            }
+
+            .carousel-caption h1 {
+                letter-spacing: 2px;
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+
+            .carousel-caption p {
+                letter-spacing: 1px;
+                font-size: 16px;
+            }
+            .partners div .card{
+                    padding: 5px 53px;
+            }
+        }
+         
+        @media only screen and (min-width: 768px) {
+            .top-cards {
+                margin-top: -2em;
+            }
+              .carousel-caption h1 {
+                letter-spacing: 1px;
+                font-size: 2.3rem;
+                font-weight: 600;
+            }
+              .carousel-caption p {
+                letter-spacing: 1px;
+                font-size: 18px;
+            }
+               .partners div .card{
+                    padding: 5px 5px;
+            }
+                 .partners div .card img{
+                    height:67px
+            }
+        }
+ 
+        @media only screen and (min-width: 992px) {
+            .top-cards {
+                margin-top: -2em;
+            }
+        }
+ 
