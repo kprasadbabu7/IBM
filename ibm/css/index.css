@@ -1,178 +1,221 @@
- 
 
-        body {
-            font-family: Roboto-Regular,AdobeInvisFont,MyriadPro-Regular;
+
+body {
+    font-family: Roboto-Regular,AdobeInvisFont,MyriadPro-Regular;
+}
+
+.navbar ul li a {
+    margin-right: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #454444;
+    font-family: "Cabin";
+    font-weight: 400;
+}
+
+.carousel-caption {
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.btn-primary {
+    background: #7E6A9E;
+    border: 1px solid #7E6A9E;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.bg-white {
+    background: #FFFFFF;
+}
+
+.contact-header span {
+    color: lightgray;
+}
+
+.card-img-top {
+    height: 232px;
+}s
+
+.card-title {
+    font-size: 21px;
+    letter-spacing: 0px;
+    color: #222222;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #444444;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.contat-info {
+    font-family: "Arial";
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+.navbar-collapse {
+    z-index: 9;
+}
+
+@media(max-width:990px) {
+    .mobileMenu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        transform: translate(-100%);
+        transition: all ease 0.25s;
+    }
+
+    .open {
+        transform: translate(0) !important;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: #d0cccc;
+        opacity: 0.5;
+        display: none;
+    }
+
+    .overlay-open {
+        display: block;
+    }
+
+    .navbar-nav {
+        overflow-y: auto;
+    }
+
+    .onRight {
+        left: auto;
+        right: 0;
+        transform: translate(100%);
+    }
+
+    .navbar {
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .slide {
+        margin-top: 95px;
+    }
+
+
+    .top-cards {
+        margin-top: 1em;
+    }
+
+    .carousel-caption h1 {
+        letter-spacing: 1px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .carousel-caption p {
+        letter-spacing: 0.5px;
+        font-size: 15px;
+    }
+
+    .partners div .card {
+        padding: 5px 53px;
+    }
+
+        .partners div .card img {
+            height: 67px;
+        }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .top-cards {
+        margin-top: -2em;
+    }
+
+    .carousel-caption h1 {
+        /*font-size: 2.3rem;*/
+        font-size: 50px;
+        letter-spacing: 1px;
+        line-height: 70px;
+        color: #ffffff;
+        font-family: "Roboto";
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .carousel-caption p {
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        font-family: "Roboto";
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .partners div .card {
+        padding: 5px 5px;
+    }
+
+        .partners div .card img {
+            height: 67px;
         }
 
-        .navbar ul li a {
-            font-family: Cabin-Regular,AdobeInvisFont,MyriadPro-Regular;
-            font-size: 20px;
-            margin-right: 5px;
-                color: #616973;
-        }
+    .slide {
+        margin-top: 0px;
+    }
+}
 
-        .carousel-caption {
-            z-index: 10;
-            color: #fff;
-            text-align: center;
-            top: 50%;
-            bottom: auto;
-            -webkit-transform: translate(0, -50%);
-            -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-        }
-      
-        .btn-primary {
-            background: #7E6A9E;
-            border: 1px solid #7E6A9E;
-            border: none;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            cursor: pointer;
-            border-radius: 16px;
-        }
-
-        .bg-white {
-            background: #FFFFFF;
-        }
-        .contact-header span{
-            color:lightgray  ;
-
-        }
-
-            /* width */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: #888;
-        }
-
-            /* Handle on hover */
-            ::-webkit-scrollbar-thumb:hover {
-                background: #555;
-            }
-            .navbar-collapse {
-                z-index:9
-            }
-
-           @media(max-width:990px) {
-            .mobileMenu {
-                position: fixed;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                margin: auto;
-                transform: translate(-100%);
-                transition: all ease 0.25s;
-            }
-
-            .open {
-                transform: translate(0) !important;
-            }
-
-            .overlay {
-                position: fixed;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                background-color: #d0cccc;
-                opacity: 0.5;
-                display: none;
-            }
-
-            .overlay-open {
-                display: block;
-            }
-
-            .navbar-nav {
-                overflow-y: auto;
-            }
-
-            .onRight {
-                left: auto;
-                right: 0;
-                transform: translate(100%);
-            }
-            .navbar{
-                    position: fixed;
-    right: 0;
-    top:0;
-    left: 0;
-    z-index: 1030;
-            }
-            .slide{
-                margin-top:95px;
-            }
-
-
-            .top-cards {
-                margin-top: 1em;
-            }
-
-            .carousel-caption h1 {
-                letter-spacing: 1px;
-                font-size: 16px;
-                font-weight: 600;
-            }
-
-            .carousel-caption p {
-                letter-spacing: 0.5px;
-                font-size: 15px;
-            }
-            .partners div .card{
-                    padding: 5px 53px;
-            }
-               .partners div .card img{
-                    height:67px
-            }
-        }
-
-
-
- 
-
-  
-         
-        @media only screen and (min-width: 768px) {
-            .top-cards {
-                margin-top: -2em;
-            }
-              .carousel-caption h1 {
-                letter-spacing: 1px;
-                font-size: 2.3rem;
-                font-weight: 600;
-            }
-              .carousel-caption p {
-                letter-spacing: 1px;
-                font-size: 18px;
-            }
-               .partners div .card{
-                    padding: 5px 5px;
-            }
-                 .partners div .card img{
-                    height:67px
-            }
-                   .slide{
-                margin-top:0px;
-            }
-
-        }
- 
-        @media only screen and (min-width: 992px) {
-            .top-cards {
-                margin-top: -2em;
-            }
-        }
- 
+@media only screen and (min-width: 992px) {
+    .top-cards {
+        margin-top: -2em;
+    }
+}
