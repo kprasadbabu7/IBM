@@ -152,13 +152,22 @@ body {
 
     .carousel-caption h1 {
         letter-spacing: 1px;
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 600;  
+        color: #ffffff;
+        font-family: "Roboto"; 
+        text-align: center;
+
+
     }
 
-    .carousel-caption p {
-        letter-spacing: 0.5px;
+    .carousel-caption p { 
         font-size: 15px;
+         letter-spacing: 1px;
+        color: #ffffff;
+        font-family: "Roboto";
+        font-weight: 300;
+        text-align: center;
     }
 
     .partners div .card {
@@ -213,9 +222,4 @@ body {
         margin-top: 0px;
     }
 }
-
-@media only screen and (min-width: 992px) {
-    .top-cards {
-        margin-top: -2em;
-    }
-}
+ 
