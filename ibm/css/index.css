@@ -1,7 +1,8 @@
 
 
 body {
-    font-family: Roboto-Regular,AdobeInvisFont,MyriadPro-Regular;
+ 
+    font-family: "Arial";
 }
 
 .navbar ul li a {
@@ -67,23 +68,19 @@ body {
 
 .contat-info {
     font-family: "Arial";
-}
-/* width */
+} 
 ::-webkit-scrollbar {
     width: 10px;
 }
-
-/* Track */
+ 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-
-/* Handle */
+ 
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
-
-    /* Handle on hover */
+ 
     ::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
@@ -91,7 +88,7 @@ body {
 .navbar-collapse {
     z-index: 9;
 }
-
+/** Mobile Device*/
 @media(max-width:990px) {
     .mobileMenu {
         position: fixed;
@@ -155,7 +152,7 @@ body {
         font-size: 18px;
         font-weight: 600;  
         color: #ffffff;
-        font-family: "Roboto"; 
+        /*font-family: "Roboto";*/ 
         text-align: center;
 
 
@@ -165,7 +162,7 @@ body {
         font-size: 15px;
          letter-spacing: 1px;
         color: #ffffff;
-        font-family: "Roboto";
+        /*font-family: "Roboto";*/
         font-weight: 300;
         text-align: center;
     }
@@ -184,20 +181,19 @@ body {
 
 
 
-
+/** Large Device*/
 @media only screen and (min-width: 768px) {
     .top-cards {
         margin-top: -2em;
     }
 
-    .carousel-caption h1 {
-        /*font-size: 2.3rem;*/
+    .carousel-caption h1 { 
         font-size: 50px;
         letter-spacing: 1px;
         line-height: 70px;
         color: #ffffff;
-        font-family: "Roboto";
-        font-weight: 600;
+        /*font-family: "Roboto";*/
+        font-weight: 500;
         text-align: center;
     }
 
@@ -205,7 +201,7 @@ body {
         font-size: 30px;
         letter-spacing: 1px;
         color: #ffffff;
-        font-family: "Roboto";
+        /*font-family: "Roboto";*/
         font-weight: 300;
         text-align: center;
     }
@@ -220,6 +216,10 @@ body {
 
     .slide {
         margin-top: 0px;
+    }
+    .partners .col-lg-2{
+        max-width:19%;
+            flex: 0 0 25%;
     }
 }
  
